@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashraf's Music Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ashraf's Music Zone</h1>
+      <p>Your dark anime-themed music sanctuary</p>
+    </header>
+
+    <main>
+      <section class="music-player">
+        <div class="cover">
+          <img id="cover-img" src="cover.png" alt="Cover" />
+        </div>
+
+        <div class="details">
+          <h2 id="song-title">Sad Songs</h2>
+          <audio id="audio" preload="metadata"></audio>
+
+          <div class="controls">
+            <button id="play-btn">Play</button>
+            <button id="pause-btn" style="display:none;">Pause</button>
+            <button id="stop-btn">Stop</button>
+            <a id="download-btn" href="#" download>Download</a>
+          </div>
+
+          <label for="speed">Speed: <span id="speed-value">1</span>x</label>
+          <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1" />
+
+          <label for="progress">Progress:</label>
+          <input type="range" id="progress" value="0" min="0" max="100" />
+          <div id="time-display">00:00 / 00:00</div>
+        </div>
+      </section>
+
+      <section class="playlist">
+        <h3>Playlist</h3>
+        <ul id="playlist-list">
+          <!-- Songs loaded by JS -->
+        </ul>
+      </section>
+
+      <section class="about">
+        <h3>About This Website</h3>
+        <p>This is Ashraf's personal music site with a dark anime vibe. Enjoy music, control playback speed, download songs, and more.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact me: <a href="mailto:achref1957@gmail.com">achref1957@gmail.com</a></p>
+      <p>© 2025 Ashraf's Music Zone. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
